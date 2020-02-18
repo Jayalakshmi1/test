@@ -16,6 +16,8 @@
 
 package com.example.jaya.architecture.blueprints.todoapp.addedittask;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
@@ -87,6 +89,7 @@ public class AddEditTaskActivity extends AppCompatActivity implements AddEditTas
     @NonNull
     private AddEditTaskFragment findOrCreateViewFragment() {
         // View Fragment
+        //View is created
         AddEditTaskFragment addEditTaskFragment = (AddEditTaskFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
 
